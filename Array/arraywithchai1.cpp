@@ -19,7 +19,14 @@ int *ptr=new int[cap];
 }
 
 void Array::insertInArray(int index,int data)
-
+{
+    if(index<0 || index>lastIndex+1)
+    {cout<<"Invalid Index";}
+    else if(lastIndex==capacity-1)
+    {
+        cout<<"Overflow";
+    }
+}
 
 int main()
 {
